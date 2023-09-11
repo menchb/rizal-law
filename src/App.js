@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import { Box } from "@mui/material";
+import HeadingBox from "./components/headingBox.tsx";
+import TwoSidesSlider from "./components/twoSidesSlider.tsx";
+import InfoFab from "./components/infoFab.tsx";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div>
+            <Box sx={{margin: '32px 24px'}}>
+                <HeadingBox />
+            </Box>
+            <Box sx={{margin: '32px 24px'}}>
+                <TwoSidesSlider />
+            </Box>
+            <InfoFab />
+        </div>
+    );
 }
 
 export default App;
